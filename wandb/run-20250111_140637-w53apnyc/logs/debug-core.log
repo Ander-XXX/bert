@@ -1,0 +1,5 @@
+{"time":"2025-01-11T14:06:37.182802764+08:00","level":"INFO","msg":"main: starting server","port-filename":"/tmp/tmpqo8xkjhq/port-2776617.txt","pid":2776617,"log-level":0,"disable-analytics":false,"shutdown-on-parent-exit":false}
+{"time":"2025-01-11T14:06:37.186989042+08:00","level":"INFO","msg":"server is running","addr":{"IP":"127.0.0.1","Port":42717,"Zone":""}}
+{"time":"2025-01-11T14:06:37.187049764+08:00","level":"INFO","msg":"Will exit if parent process dies.","ppid":2776617}
+{"time":"2025-01-11T14:06:37.367233973+08:00","level":"INFO","msg":"connection: ManageConnectionData: new connection created","id":"127.0.0.1:52616"}
+{"time":"2025-01-11T14:06:37.377149263+08:00","level":"INFO","msg":"handleInformInit: received","streamId":"w53apnyc","id":"127.0.0.1:52616"}

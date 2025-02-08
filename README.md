@@ -12,3 +12,5 @@ python training_script.py --data_path=~/processed_hf --eval_batch_size=64 --lora
 ```
 
 3- For all the expalanations, the results and the discussion, please check the blog in HuggingFace :
+
+## [Lora for sequence classification with Roberta, Llama, and Mistral](https://huggingface.co/blog/lora-sequence-classification)

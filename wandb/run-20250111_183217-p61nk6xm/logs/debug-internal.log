@@ -1,0 +1,15 @@
+{"time":"2025-01-11T18:32:17.800876187+08:00","level":"INFO","msg":"stream: starting","core version":"0.19.2","symlink path":"/home/lijinrun/lgs/Roberta-Llama-Mistral/wandb/run-20250111_183217-p61nk6xm/logs/debug-core.log"}
+{"time":"2025-01-11T18:32:17.906864066+08:00","level":"INFO","msg":"created new stream","id":"p61nk6xm"}
+{"time":"2025-01-11T18:32:17.906913108+08:00","level":"INFO","msg":"stream: started","id":"p61nk6xm"}
+{"time":"2025-01-11T18:32:17.90698447+08:00","level":"INFO","msg":"writer: Do: started","stream_id":"p61nk6xm"}
+{"time":"2025-01-11T18:32:17.907028701+08:00","level":"INFO","msg":"sender: started","stream_id":"p61nk6xm"}
+{"time":"2025-01-11T18:32:17.907109303+08:00","level":"INFO","msg":"handler: started","stream_id":"p61nk6xm"}
+{"time":"2025-01-11T18:32:47.909901949+08:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": context deadline exceeded"}
+{"time":"2025-01-11T18:33:20.138023495+08:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": context deadline exceeded"}
+{"time":"2025-01-11T18:33:47.845820067+08:00","level":"INFO","msg":"stream: closing","id":"p61nk6xm"}
+{"time":"2025-01-11T18:33:47.84592756+08:00","level":"INFO","msg":"handler: closed","stream_id":"p61nk6xm"}
+{"time":"2025-01-11T18:33:47.84594226+08:00","level":"ERROR","msg":"sender: upsertRun:","error":"failed to upsert bucket: api: failed sending: POST https://api.wandb.ai/graphql giving up after 3 attempt(s): context canceled"}
+{"time":"2025-01-11T18:33:47.845990331+08:00","level":"INFO","msg":"writer: Close: closed","stream_id":"p61nk6xm"}
+{"time":"2025-01-11T18:33:47.846155526+08:00","level":"INFO","msg":"sender: closed","stream_id":"p61nk6xm"}
+{"time":"2025-01-11T18:33:47.846179187+08:00","level":"WARN","msg":"runwork: ignoring record after close","work":{}}
+{"time":"2025-01-11T18:33:47.846433984+08:00","level":"INFO","msg":"stream: closed","id":"p61nk6xm"}

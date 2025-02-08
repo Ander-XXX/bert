@@ -7,12 +7,14 @@ Training script to fine-tune a pre-train LLM with PEFT methods using HuggingFace
 """
 
 import os
-os.environ["WANDB_PROJECT"] = "peft_tweets" # log to your project
-os.environ["WANDB_LOG_MODEL"] = "all" # log your models
+os.environ["WANDB_PROJECT"] = "classifier_with_Lora" # log to your project
+os.environ["WANDB_API_KEY"] = '2a3daa620b301a74d0558a66c8ed05562fd80235'
+# os.environ["WANDB_MODE"] = "offline"
+os.environ["WANDB_LOG_MODEL"] = "offline" # log your models
 from copy import deepcopy
 
 from argparse import ArgumentParser
-from datasets import load_from_disk
+from datasets import load_dataset, load_from_disk
 import evaluate
 import numpy as np
 from peft import get_peft_model, LoraConfig, TaskType
@@ -94,10 +96,10 @@ def get_args():
     return arguments
 
 def compute_metrics(eval_pred):
-    precision_metric = evaluate.load("precision")
-    recall_metric = evaluate.load("recall")
-    f1_metric= evaluate.load("f1")
-    accuracy_metric = evaluate.load("accuracy")
+    precision_metric = evaluate.load("evaluate/metrics/precision")
+    recall_metric = evaluate.load("evaluate/metrics/recall")
+    f1_metric= evaluate.load("evaluate/metrics/f1")
+    accuracy_metric = evaluate.load("evaluate/metrics/accuracy")
 
     logits, labels = eval_pred
     predictions = np.argmax(logits, axis=-1)
@@ -151,10 +153,10 @@ def get_dataset_and_collator(
     def _preprocesscing_function(examples):
         return tokenizer(examples['text'], truncation=truncation, max_length=max_length)
 
-    col_to_delete = ['id', 'keyword','location', 'text']
+    # col_to_delete = ['id', 'keyword','location', 'text']
     tokenized_datasets = data.map(_preprocesscing_function, batched=False)
-    tokenized_datasets = tokenized_datasets.remove_columns(col_to_delete)
-    tokenized_datasets = tokenized_datasets.rename_column("target", "label")
+    # tokenized_datasets = tokenized_datasets.remove_columns(col_to_delete)
+    # tokenized_datasets = tokenized_datasets.rename_column("target", "label")
     tokenized_datasets.set_format("torch")
 
     padding_collator = DataCollatorWithPadding(tokenizer=tokenizer)
@@ -174,13 +176,10 @@ def get_lora_model(model_checkpoints, num_labels=2, rank=4, alpha=16, lora_dropo
             offload_folder="offload",
             trust_remote_code=True,
         )
-    if model_checkpoints == 'mistralai/Mistral-7B-v0.1' or model_checkpoints == 'meta-llama/Llama-2-7b-hf': 
+    if model_checkpoints == 'backbone/Qwen2.5-3B-Instruct' or model_checkpoints == 'backbone/Qwen2.5-3B': 
         peft_config = LoraConfig(
             task_type=TaskType.SEQ_CLS, r=rank, lora_alpha=alpha, lora_dropout=lora_dropout, bias=bias, 
-            target_modules=[
-                "q_proj",
-                "v_proj",
-            ],
+            target_modules=["q_proj", "k_proj"]
     )
     else: 
         peft_config = LoraConfig(
@@ -260,7 +259,7 @@ def main(args):
         model=model,
         args=training_args,
         train_dataset=dataset['train'],
-        eval_dataset=dataset["val"],
+        eval_dataset=dataset["test"],
         data_collator=collator,
         compute_metrics=compute_metrics
     )
@@ -271,3 +270,4 @@ def main(args):
 if __name__ == "__main__":
     args = get_args()
     main(args)
+#python

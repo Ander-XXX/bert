@@ -1,0 +1,21 @@
+  0%|          | 0/4689 [00:00<?, ?it/s]`use_cache=True` is incompatible with gradient checkpointing. Setting `use_cache=False`...
+/home/lijinrun/anaconda3/envs/class2/lib/python3.11/site-packages/torch/utils/checkpoint.py:61: UserWarning: None of the inputs have requires_grad=True. Gradients will be None
+  warnings.warn(
+  1%|          | 38/4689 [00:45<1:30:28,  1.17s/it]Traceback (most recent call last):
+  File "/home/lijinrun/lgs/Roberta-Llama-Mistral/training_script.py", line 270, in <module>
+    main(args)
+  File "/home/lijinrun/lgs/Roberta-Llama-Mistral/training_script.py", line 265, in main
+    trainer.train()
+  File "/home/lijinrun/anaconda3/envs/class2/lib/python3.11/site-packages/transformers/trainer.py", line 2052, in train
+    return inner_training_loop(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/lijinrun/anaconda3/envs/class2/lib/python3.11/site-packages/transformers/trainer.py", line 2388, in _inner_training_loop
+    tr_loss_step = self.training_step(model, inputs)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lijinrun/anaconda3/envs/class2/lib/python3.11/site-packages/transformers/trainer.py", line 3485, in training_step
+    loss = self.compute_loss(model, inputs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lijinrun/lgs/Roberta-Llama-Mistral/training_script.py", line 201, in compute_loss
+    loss_fct = torch.nn.CrossEntropyLoss(weight=torch.tensor([neg_weight, pos_weight], device=labels.device, dtype=logits.dtype))
+                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt

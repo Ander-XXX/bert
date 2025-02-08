@@ -1,0 +1,14 @@
+{"time":"2025-01-11T18:36:01.364778415+08:00","level":"INFO","msg":"main: starting server","port-filename":"/tmp/tmphrn85wmy/port-2805938.txt","pid":2805938,"log-level":0,"disable-analytics":false,"shutdown-on-parent-exit":false}
+{"time":"2025-01-11T18:36:01.378517777+08:00","level":"INFO","msg":"server is running","addr":{"IP":"127.0.0.1","Port":41695,"Zone":""}}
+{"time":"2025-01-11T18:36:01.378584389+08:00","level":"INFO","msg":"Will exit if parent process dies.","ppid":2805938}
+{"time":"2025-01-11T18:36:01.549357472+08:00","level":"INFO","msg":"connection: ManageConnectionData: new connection created","id":"127.0.0.1:42334"}
+{"time":"2025-01-11T18:36:01.559278117+08:00","level":"INFO","msg":"handleInformInit: received","streamId":"5qgkd23r","id":"127.0.0.1:42334"}
+{"time":"2025-01-11T18:36:01.665390584+08:00","level":"INFO","msg":"handleInformInit: stream started","streamId":"5qgkd23r","id":"127.0.0.1:42334"}
+{"time":"2025-01-11T18:37:31.602985406+08:00","level":"INFO","msg":"handleInformTeardown: server teardown initiated","id":"127.0.0.1:42334"}
+{"time":"2025-01-11T18:37:31.603092249+08:00","level":"INFO","msg":"connection: Close: initiating connection closure","id":"127.0.0.1:42334"}
+{"time":"2025-01-11T18:37:31.603162971+08:00","level":"INFO","msg":"server is shutting down"}
+{"time":"2025-01-11T18:37:31.603268864+08:00","level":"INFO","msg":"connection: Close: connection successfully closed","id":"127.0.0.1:42334"}
+{"time":"2025-01-11T18:37:31.605944079+08:00","level":"INFO","msg":"handleInformTeardown: server shutdown complete","id":"127.0.0.1:42334"}
+{"time":"2025-01-11T18:37:31.606064802+08:00","level":"ERROR","msg":"processOutgoingData: flush error","error":"write tcp 127.0.0.1:41695->127.0.0.1:42334: use of closed network connection","id":"127.0.0.1:42334"}
+{"time":"2025-01-11T18:37:31.606126464+08:00","level":"INFO","msg":"connection: ManageConnectionData: connection closed","id":"127.0.0.1:42334"}
+{"time":"2025-01-11T18:37:31.606154095+08:00","level":"INFO","msg":"server is closed"}

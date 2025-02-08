@@ -1,0 +1,40 @@
+  0%|          | 0/4689 [00:00<?, ?it/s]`use_cache=True` is incompatible with gradient checkpointing. Setting `use_cache=False`...
+/home/lijinrun/anaconda3/envs/class2/lib/python3.11/site-packages/torch/utils/checkpoint.py:61: UserWarning: None of the inputs have requires_grad=True. Gradients will be None
+  warnings.warn(
+ 33%|███▎      | 1563/4689 [30:17<52:44,  1.01s/iTraceback (most recent call last):
+{'loss': 0.6567, 'grad_norm': 24.574203491210938, 'learning_rate': 0.0001370806853827022, 'epoch': 0.32}
+{'loss': 0.2912, 'grad_norm': 24.62679100036621, 'learning_rate': 0.0001319234925282383, 'epoch': 0.64}
+{'loss': 0.2645, 'grad_norm': 31.596738815307617, 'learning_rate': 0.00011808613813480113, 'epoch': 0.96}
+  File "/home/lijinrun/lgs/Roberta-Llama-Mistral/training_script.py", line 270, in <module>
+    main(args)
+  File "/home/lijinrun/lgs/Roberta-Llama-Mistral/training_script.py", line 265, in main
+    trainer.train()
+  File "/home/lijinrun/anaconda3/envs/class2/lib/python3.11/site-packages/transformers/trainer.py", line 2052, in train
+    return inner_training_loop(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/lijinrun/anaconda3/envs/class2/lib/python3.11/site-packages/transformers/trainer.py", line 2486, in _inner_training_loop
+    self.control = self.callback_handler.on_epoch_end(args, self.state, self.control)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lijinrun/anaconda3/envs/class2/lib/python3.11/site-packages/transformers/trainer_callback.py", line 476, in on_epoch_end
+    return self.call_event("on_epoch_end", args, state, control)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lijinrun/anaconda3/envs/class2/lib/python3.11/site-packages/transformers/trainer_callback.py", line 516, in call_event
+    result = getattr(callback, event)(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lijinrun/lgs/Roberta-Llama-Mistral/training_script.py", line 119, in on_epoch_end
+    self._trainer.evaluate(eval_dataset=self._trainer.train_dataset, metric_key_prefix="train")
+  File "/home/lijinrun/anaconda3/envs/class2/lib/python3.11/site-packages/transformers/trainer.py", line 3868, in evaluate
+    output = eval_loop(
+             ^^^^^^^^^^
+  File "/home/lijinrun/anaconda3/envs/class2/lib/python3.11/site-packages/transformers/trainer.py", line 4160, in evaluation_loop
+    metrics = self.compute_metrics(EvalPrediction(predictions=all_preds, label_ids=all_labels))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lijinrun/lgs/Roberta-Llama-Mistral/training_script.py", line 97, in compute_metrics
+    precision_metric = evaluate.load("Roberta-Llama-Mistral/evaluate/precision")
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lijinrun/anaconda3/envs/class2/lib/python3.11/site-packages/evaluate/loading.py", line 731, in load
+    evaluation_module = evaluation_module_factory(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lijinrun/anaconda3/envs/class2/lib/python3.11/site-packages/evaluate/loading.py", line 686, in evaluation_module_factory
+    raise FileNotFoundError(f"Couldn't find a module script at {relative_to_absolute_path(combined_path)}.")
+FileNotFoundError: Couldn't find a module script at /home/lijinrun/lgs/Roberta-Llama-Mistral/Roberta-Llama-Mistral/evaluate/precision/precision.py.

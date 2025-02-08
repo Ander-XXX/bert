@@ -1,0 +1,8 @@
+  0%|                                                                                                             | 0/4689 [00:00<?, ?it/s]`use_cache=True` is incompatible with gradient checkpointing. Setting `use_cache=False`...
+/home/lijinrun/anaconda3/envs/class2/lib/python3.11/site-packages/torch/utils/checkpoint.py:61: UserWarning: None of the inputs have requires_grad=True. Gradients will be None
+  warnings.warn(
+ 33%|████████████████████████████████▋                                                                 | 1563/4689 [30:24<52:45,  1.01s/it]
+{'loss': 0.9459, 'grad_norm': 10.777334213256836, 'learning_rate': 0.0001370806853827022, 'epoch': 0.32}
+{'loss': 0.303, 'grad_norm': 28.90119171142578, 'learning_rate': 0.0001319234925282383, 'epoch': 0.64}
+{'loss': 0.2559, 'grad_norm': 30.944091796875, 'learning_rate': 0.00011808613813480113, 'epoch': 0.96}
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████| 391/391 [29:12<00:00,  3.99s/it]

@@ -1,0 +1,15 @@
+{"time":"2025-01-11T18:57:12.656354251+08:00","level":"INFO","msg":"stream: starting","core version":"0.19.2","symlink path":"/home/lijinrun/lgs/Roberta-Llama-Mistral/wandb/run-20250111_185712-v4s7nfw8/logs/debug-core.log"}
+{"time":"2025-01-11T18:57:12.762062914+08:00","level":"INFO","msg":"created new stream","id":"v4s7nfw8"}
+{"time":"2025-01-11T18:57:12.762106535+08:00","level":"INFO","msg":"stream: started","id":"v4s7nfw8"}
+{"time":"2025-01-11T18:57:12.762176268+08:00","level":"INFO","msg":"writer: Do: started","stream_id":"v4s7nfw8"}
+{"time":"2025-01-11T18:57:12.762222249+08:00","level":"INFO","msg":"handler: started","stream_id":"v4s7nfw8"}
+{"time":"2025-01-11T18:57:12.762281881+08:00","level":"INFO","msg":"sender: started","stream_id":"v4s7nfw8"}
+{"time":"2025-01-11T18:57:42.764533984+08:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": net/http: request canceled while waiting for connection (Client.Timeout exceeded while awaiting headers)"}
+{"time":"2025-01-11T18:58:14.937803551+08:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": net/http: request canceled while waiting for connection (Client.Timeout exceeded while awaiting headers)"}
+{"time":"2025-01-11T18:58:42.701942225+08:00","level":"INFO","msg":"stream: closing","id":"v4s7nfw8"}
+{"time":"2025-01-11T18:58:42.702058588+08:00","level":"ERROR","msg":"sender: upsertRun:","error":"failed to upsert bucket: api: failed sending: POST https://api.wandb.ai/graphql giving up after 3 attempt(s): context canceled"}
+{"time":"2025-01-11T18:58:42.702067709+08:00","level":"INFO","msg":"handler: closed","stream_id":"v4s7nfw8"}
+{"time":"2025-01-11T18:58:42.70212881+08:00","level":"INFO","msg":"writer: Close: closed","stream_id":"v4s7nfw8"}
+{"time":"2025-01-11T18:58:42.702252724+08:00","level":"INFO","msg":"sender: closed","stream_id":"v4s7nfw8"}
+{"time":"2025-01-11T18:58:42.702278615+08:00","level":"WARN","msg":"runwork: ignoring record after close","work":{}}
+{"time":"2025-01-11T18:58:42.702630906+08:00","level":"INFO","msg":"stream: closed","id":"v4s7nfw8"}

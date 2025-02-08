@@ -1,0 +1,15 @@
+{"time":"2025-01-11T18:53:49.890741584+08:00","level":"INFO","msg":"stream: starting","core version":"0.19.2","symlink path":"/home/lijinrun/lgs/Roberta-Llama-Mistral/wandb/run-20250111_185349-13dyplpe/logs/debug-core.log"}
+{"time":"2025-01-11T18:53:49.996921113+08:00","level":"INFO","msg":"created new stream","id":"13dyplpe"}
+{"time":"2025-01-11T18:53:49.996976274+08:00","level":"INFO","msg":"stream: started","id":"13dyplpe"}
+{"time":"2025-01-11T18:53:49.997044196+08:00","level":"INFO","msg":"writer: Do: started","stream_id":"13dyplpe"}
+{"time":"2025-01-11T18:53:49.997080757+08:00","level":"INFO","msg":"handler: started","stream_id":"13dyplpe"}
+{"time":"2025-01-11T18:53:49.99715532+08:00","level":"INFO","msg":"sender: started","stream_id":"13dyplpe"}
+{"time":"2025-01-11T18:54:19.999173977+08:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": context deadline exceeded"}
+{"time":"2025-01-11T18:54:52.235314714+08:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": context deadline exceeded"}
+{"time":"2025-01-11T18:55:19.932316338+08:00","level":"INFO","msg":"stream: closing","id":"13dyplpe"}
+{"time":"2025-01-11T18:55:19.93236843+08:00","level":"INFO","msg":"handler: closed","stream_id":"13dyplpe"}
+{"time":"2025-01-11T18:55:19.93240022+08:00","level":"ERROR","msg":"sender: upsertRun:","error":"failed to upsert bucket: api: failed sending: POST https://api.wandb.ai/graphql giving up after 3 attempt(s): context canceled"}
+{"time":"2025-01-11T18:55:19.932407161+08:00","level":"INFO","msg":"writer: Close: closed","stream_id":"13dyplpe"}
+{"time":"2025-01-11T18:55:19.932448072+08:00","level":"INFO","msg":"sender: closed","stream_id":"13dyplpe"}
+{"time":"2025-01-11T18:55:19.932475013+08:00","level":"WARN","msg":"runwork: ignoring record after close","work":{}}
+{"time":"2025-01-11T18:55:19.932666878+08:00","level":"INFO","msg":"stream: closed","id":"13dyplpe"}

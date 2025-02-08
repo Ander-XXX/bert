@@ -1,0 +1,11 @@
+{"time":"2025-01-11T16:27:31.908344247+08:00","level":"INFO","msg":"stream: starting","core version":"0.19.2","symlink path":"/home/lijinrun/lgs/Roberta-Llama-Mistral/wandb/run-20250111_162731-1hyp64xn/logs/debug-core.log"}
+{"time":"2025-01-11T16:27:32.014576616+08:00","level":"INFO","msg":"created new stream","id":"1hyp64xn"}
+{"time":"2025-01-11T16:27:32.014624098+08:00","level":"INFO","msg":"stream: started","id":"1hyp64xn"}
+{"time":"2025-01-11T16:27:32.01469436+08:00","level":"INFO","msg":"writer: Do: started","stream_id":"1hyp64xn"}
+{"time":"2025-01-11T16:27:32.014742101+08:00","level":"INFO","msg":"sender: started","stream_id":"1hyp64xn"}
+{"time":"2025-01-11T16:27:32.014811553+08:00","level":"INFO","msg":"handler: started","stream_id":"1hyp64xn"}
+{"time":"2025-01-11T16:27:32.436350935+08:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-01-11T16:28:19.057884016+08:00","level":"INFO","msg":"stream: closing","id":"1hyp64xn"}
+{"time":"2025-01-11T16:28:19.057924767+08:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-01-11T16:28:19.058643817+08:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-01-11T16:28:20.061713643+08:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}

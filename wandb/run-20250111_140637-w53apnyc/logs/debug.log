@@ -1,0 +1,28 @@
+2025-01-11 14:06:37,157 INFO    MainThread:2776617 [wandb_setup.py:_flush():68] Current SDK version is 0.19.2
+2025-01-11 14:06:37,158 INFO    MainThread:2776617 [wandb_setup.py:_flush():68] Configure stats pid to 2776617
+2025-01-11 14:06:37,158 INFO    MainThread:2776617 [wandb_setup.py:_flush():68] Loading settings from /home/lijinrun/.config/wandb/settings
+2025-01-11 14:06:37,158 INFO    MainThread:2776617 [wandb_setup.py:_flush():68] Loading settings from /home/lijinrun/lgs/Roberta-Llama-Mistral/wandb/settings
+2025-01-11 14:06:37,158 INFO    MainThread:2776617 [wandb_setup.py:_flush():68] Loading settings from environment variables
+2025-01-11 14:06:37,158 INFO    MainThread:2776617 [wandb_init.py:_log_setup():523] Logging user logs to /home/lijinrun/lgs/Roberta-Llama-Mistral/wandb/run-20250111_140637-w53apnyc/logs/debug.log
+2025-01-11 14:06:37,158 INFO    MainThread:2776617 [wandb_init.py:_log_setup():524] Logging internal logs to /home/lijinrun/lgs/Roberta-Llama-Mistral/wandb/run-20250111_140637-w53apnyc/logs/debug-internal.log
+2025-01-11 14:06:37,158 INFO    MainThread:2776617 [wandb_init.py:init():641] calling init triggers
+2025-01-11 14:06:37,158 INFO    MainThread:2776617 [wandb_init.py:init():647] wandb.init called with sweep_config: {}
+config: {}
+2025-01-11 14:06:37,158 INFO    MainThread:2776617 [wandb_init.py:init():674] starting backend
+2025-01-11 14:06:37,367 INFO    MainThread:2776617 [wandb_init.py:init():678] sending inform_init request
+2025-01-11 14:06:37,372 INFO    MainThread:2776617 [backend.py:_multiprocessing_setup():104] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2025-01-11 14:06:37,372 INFO    MainThread:2776617 [wandb_init.py:init():693] backend started and connected
+2025-01-11 14:06:37,374 INFO    MainThread:2776617 [wandb_init.py:init():786] updated telemetry
+2025-01-11 14:06:37,381 INFO    MainThread:2776617 [wandb_init.py:init():818] communicating run to backend with 90.0 second timeout
+2025-01-11 14:06:37,384 WARNING MsgRouterThr:2776617 [router.py:message_loop():75] message_loop has been closed
+2025-01-11 14:06:47,385 ERROR   MainThread:2776617 [wandb_init.py:init():1299] error in wandb.init()
+Traceback (most recent call last):
+  File "/home/lijinrun/anaconda3/envs/class2/lib/python3.11/site-packages/wandb/sdk/wandb_init.py", line 1289, in init
+    return wi.init()
+           ^^^^^^^^^
+  File "/home/lijinrun/anaconda3/envs/class2/lib/python3.11/site-packages/wandb/sdk/wandb_init.py", line 821, in init
+    result = run_init_handle.wait(
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lijinrun/anaconda3/envs/class2/lib/python3.11/site-packages/wandb/sdk/lib/mailbox.py", line 277, in wait
+    raise MailboxError("transport failed")
+wandb.sdk.lib.mailbox.MailboxError: transport failed

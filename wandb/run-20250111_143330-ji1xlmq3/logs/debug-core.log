@@ -1,0 +1,13 @@
+{"time":"2025-01-11T14:33:30.446242481+08:00","level":"INFO","msg":"main: starting server","port-filename":"/tmp/tmpdfbt81mk/port-2783254.txt","pid":2783254,"log-level":0,"disable-analytics":false,"shutdown-on-parent-exit":false}
+{"time":"2025-01-11T14:33:30.450575756+08:00","level":"INFO","msg":"server is running","addr":{"IP":"127.0.0.1","Port":36121,"Zone":""}}
+{"time":"2025-01-11T14:33:30.450656299+08:00","level":"INFO","msg":"Will exit if parent process dies.","ppid":2783254}
+{"time":"2025-01-11T14:33:30.630088935+08:00","level":"INFO","msg":"connection: ManageConnectionData: new connection created","id":"127.0.0.1:54764"}
+{"time":"2025-01-11T14:33:30.639837877+08:00","level":"INFO","msg":"handleInformInit: received","streamId":"ji1xlmq3","id":"127.0.0.1:54764"}
+{"time":"2025-01-11T14:33:30.746405637+08:00","level":"INFO","msg":"handleInformInit: stream started","streamId":"ji1xlmq3","id":"127.0.0.1:54764"}
+{"time":"2025-01-11T14:33:56.826215426+08:00","level":"INFO","msg":"handleInformTeardown: server teardown initiated","id":"127.0.0.1:54764"}
+{"time":"2025-01-11T14:33:56.826288508+08:00","level":"INFO","msg":"connection: Close: initiating connection closure","id":"127.0.0.1:54764"}
+{"time":"2025-01-11T14:33:56.826290528+08:00","level":"INFO","msg":"server is shutting down"}
+{"time":"2025-01-11T14:33:56.826427202+08:00","level":"INFO","msg":"connection: Close: connection successfully closed","id":"127.0.0.1:54764"}
+{"time":"2025-01-11T14:33:58.25372124+08:00","level":"INFO","msg":"handleInformTeardown: server shutdown complete","id":"127.0.0.1:54764"}
+{"time":"2025-01-11T14:33:58.253752141+08:00","level":"INFO","msg":"connection: ManageConnectionData: connection closed","id":"127.0.0.1:54764"}
+{"time":"2025-01-11T14:33:58.253776111+08:00","level":"INFO","msg":"server is closed"}
